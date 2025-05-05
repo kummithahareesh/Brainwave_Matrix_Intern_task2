@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fitness Tracker App</title>
+  <link rel="stylesheet" href="fit.css" />
+</head>
+<body>
+  <header>
+    <h1>Fitness Tracker</h1>
+    <p>Track your workouts, runs, and calorie intake</p>
+  </header>
+
+  <div class="container">
+    <div class="card">
+      <h2>Workout Tracker</h2>
+      <input type="text" id="workoutInput" placeholder="Enter workout (e.g., Pushups - 20 reps)" />
+      <button onclick="addActivity('workout')">Add Workout</button>
+      <ul id="workoutList"></ul>
+    </div>
+
+    <div class="card">
+      <h2>Run Tracker</h2>
+      <input type="text" id="runInput" placeholder="Enter run (e.g., 5km in 30min)" />
+      <button onclick="addActivity('run')">Add Run</button>
+      <ul id="runList"></ul>
+    </div>
+
+    <div class="card">
+      <h2>Calorie Intake</h2>
+      <input type="text" id="calorieInput" placeholder="Enter calories (e.g., Breakfast - 400 kcal)" />
+      <button onclick="addActivity('calorie')">Add Intake</button>
+      <ul id="calorieList"></ul>
+    </div>
+  </div>
+
+  <script src="fit.js"></script>
+</body>
+</html>
